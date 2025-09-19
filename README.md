@@ -34,13 +34,11 @@ A modern, responsive web interface for managing and exploring Weaviate vector da
 ### 🔍 GraphQL Interface
 - **Interactive Query Editor**: Full-featured GraphQL playground with syntax highlighting
 - **Example Queries**: Pre-built query templates for common operations
-- **Query History**: Access previously executed queries
 - **Results Visualization**: Enhanced JSON display with copy/download functionality
 
 ### 🖥️ Cluster Information
 - **Real-time Status**: Monitor cluster health and connection status
 - **Meta Information**: View Weaviate version, modules, and configuration
-- **Performance Metrics**: Track cluster performance indicators
 
 ### 🎨 Modern UI/UX
 - **Dark Theme**: Eye-friendly dark interface optimized for long coding sessions
