@@ -295,7 +295,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 - **Documentation**: [Weaviate Documentation](https://weaviate.io/developers/weaviate)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/weaviate-dashboard/issues)
+- **Issues**: [GitHub Issues](https://github.com/evrenonur/weaviate-ui/issues)
 - **Weaviate Community**: [Weaviate Slack](https://weaviate.io/slack)
 
 ---
