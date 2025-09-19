@@ -108,7 +108,7 @@ services:
       - '8080'
       - --scheme
       - http
-    image: cr.weaviate.io/semitechnologies/weaviate:1.25.0
+    image: semitechnologies/weaviate:latest
     ports:
       - "8080:8080"
     environment:
