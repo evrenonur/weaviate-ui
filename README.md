@@ -11,27 +11,39 @@ A modern, responsive web interface for managing and exploring Weaviate vector da
 
 ## ✨ Features
 
-### 🔗 Multi-Connection Management
-- **Multiple Weaviate Instances**: Connect to multiple Weaviate servers simultaneously
-- **Connection Persistence**: Automatic localStorage-based connection storage
-- **Favorites & Recent**: Quick access to frequently used connections
-- **Import/Export**: Share connection configurations across teams
-- **API Key Support**: Secure authentication with API keys
+### 🔗 Connection Management
+- **Add/Edit Connections**: Connect to Weaviate instances with URL and API key
+- **Connection Testing**: Verify connectivity before saving
+- **Connection Storage**: localStorage-based connection persistence
+- **Connection Switching**: Easy switching between multiple instances
 
 ### 📊 Schema Management
-- **Visual Schema Browser**: Explore classes and properties with an intuitive interface
-- **Create Classes**: Add new classes with custom properties and data types
-- **Property Management**: Support for text, numbers, booleans, dates, and arrays
-- **Class Statistics**: View property counts and schema overview
+- **Visual Schema Browser**: Browse classes and properties with detailed view
+- **Add Classes**: Create new classes with custom properties and data types
+- **Delete Classes**: Remove classes from your schema
+- **Class Statistics**: View total classes and properties count
+- **Property Details**: View property names, data types, and descriptions
 
 ### 🗃️ Object Management
-- **Object Browser**: Browse and search through your vector objects
-- **Create Objects**: Add new objects with dynamic forms based on class schemas
+- **Object Browser**: Browse objects with pagination (20 per page)
+- **Add Objects**: Create new objects with dynamic forms based on class schema
+- **Delete Objects**: Remove objects from your database
 - **Object Details**: View complete object data with enhanced JSON visualization
-- **Pagination**: Efficient browsing of large datasets
 - **Class Filtering**: Filter objects by specific classes
 
 ### 🔍 GraphQL Interface
+<<<<<<< HEAD
+- **Interactive Query Editor**: GraphQL playground with syntax highlighting (CodeMirror)
+- **Example Queries**: Pre-built templates (Get Objects, Semantic Search, Where Filter, Aggregate, Explore)
+- **Query Execution**: Run GraphQL queries against your Weaviate instance
+- **Results Display**: Enhanced JSON visualization with copy/download functionality
+- **Query Tips**: Built-in GraphQL syntax help and examples
+
+### 🖥️ Cluster Information
+- **Server Information**: View hostname and Weaviate version
+- **Module Information**: Display enabled modules and their status
+- **Raw Meta Data**: Complete server meta information with JSON viewer
+=======
 - **Interactive Query Editor**: Full-featured GraphQL playground with syntax highlighting
 - **Example Queries**: Pre-built query templates for common operations
 - **Results Visualization**: Enhanced JSON display with copy/download functionality
@@ -39,12 +51,14 @@ A modern, responsive web interface for managing and exploring Weaviate vector da
 ### 🖥️ Cluster Information
 - **Real-time Status**: Monitor cluster health and connection status
 - **Meta Information**: View Weaviate version, modules, and configuration
+>>>>>>> 29ba87297b44c679a49e100b77d8a71b364a8720
 
 ### 🎨 Modern UI/UX
-- **Dark Theme**: Eye-friendly dark interface optimized for long coding sessions
-- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-- **Gradient Animations**: Smooth, modern animations and transitions
-- **Component Library**: Built with shadcn/ui components for consistency
+- **Dark Theme**: Eye-friendly dark interface with gradient backgrounds
+- **Responsive Design**: Works on desktop, tablet, and mobile devices
+- **Loading States**: Proper loading indicators for async operations
+- **Error Handling**: User-friendly error messages and retry options
+- **Component Library**: Built with shadcn/ui and Tailwind CSS
 
 ## 🚀 Quick Start
 
@@ -58,8 +72,8 @@ A modern, responsive web interface for managing and exploring Weaviate vector da
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/weaviate-dashboard.git
-   cd weaviate-dashboard
+   git clone https://github.com/evrenonur/weaviate-ui.git
+   cd weaviate-ui
    ```
 
 2. **Install dependencies**
@@ -145,33 +159,42 @@ services:
 
 ### Managing Connections
 
-1. **Click "Manage Connections"** in the sidebar
-2. **Add New Connection** with your Weaviate instance details
-3. **Test Connection** to verify connectivity
-4. **Set as Active** to switch between different instances
-5. **Mark as Favorite** for quick access
+1. **Click "Settings" icon** in the sidebar to open Connection Manager
+2. **Add New Connection** with your Weaviate instance URL and optional API key
+3. **Test Connection** to verify connectivity before saving
+4. **Set as Active** to use the connection
+5. **Switch between connections** as needed
 
 ### Creating Schema
 
-1. **Navigate to Schema tab**
+1. **Navigate to Schema tab** (Database icon)
 2. **Click "Add Class"** to create a new class
-3. **Define Properties** with appropriate data types
-4. **Save** to create the class in Weaviate
+3. **Enter class name** and add properties with data types
+4. **Save** to create the class in your Weaviate instance
+5. **View class statistics** in the overview cards
 
 ### Adding Objects
 
-1. **Go to Objects tab**
-2. **Click "Add Object"**
-3. **Select Class** from your schema
-4. **Fill Property Values** using the dynamic form
+1. **Go to Objects tab** (Search icon)
+2. **Select a class** from the dropdown filter
+3. **Click "Add Object"** to open the creation form
+4. **Fill in property values** based on your class schema
 5. **Create** to add the object to your database
 
 ### GraphQL Queries
 
-1. **Open GraphQL tab**
-2. **Write queries** in the editor with syntax highlighting
-3. **Use example queries** as templates
-4. **Execute** to see results with enhanced JSON visualization
+1. **Open GraphQL tab** (Code icon)
+2. **Choose from example queries** or write your own
+3. **Use syntax highlighting** in the CodeMirror editor
+4. **Click "Run Query"** to execute
+5. **View results** in the enhanced JSON viewer with copy/download options
+
+### Viewing Cluster Info
+
+1. **Click Cluster Info tab** (Activity icon)
+2. **View server information** (hostname, version)
+3. **Check enabled modules** and their status
+4. **Explore raw meta data** in the JSON viewer
 
 ## 🛠️ Development
 
@@ -287,7 +310,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **[Weaviate](https://weaviate.io/)** - The amazing vector database
 - **[Next.js](https://nextjs.org/)** - React framework for production
 - **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[shadcn/ui](https://ui.shadcn.com/)** - Beautiful component library
 - **[Lucide](https://lucide.dev/)** - Simple and beautiful icons
 
 ## 📞 Support
