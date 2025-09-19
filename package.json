@@ -3,16 +3,16 @@
   "version": "1.0.0",
   "description": "A modern, responsive web interface for managing and exploring Weaviate vector databases",
   "keywords": ["weaviate", "vector-database", "dashboard", "nextjs", "typescript", "graphql", "ai", "machine-learning"],
-  "author": "Your Name <your.email@example.com>",
+  "author": "Onur Evren <onur.evren.1999@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/weaviate-dashboard.git"
+    "url": "https://github.com/evrenonur/weaviate-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/weaviate-dashboard/issues"
+    "url": "https://github.com/evrenonur/weaviate-ui/issues"
   },
-  "homepage": "https://github.com/yourusername/weaviate-dashboard#readme",
+  "homepage": "https://github.com/evrenonur/weaviate-uid#readme",
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=8.0.0"
