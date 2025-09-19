@@ -32,7 +32,6 @@ A modern, responsive web interface for managing and exploring Weaviate vector da
 - **Class Filtering**: Filter objects by specific classes
 
 ### 🔍 GraphQL Interface
-<<<<<<< HEAD
 - **Interactive Query Editor**: GraphQL playground with syntax highlighting (CodeMirror)
 - **Example Queries**: Pre-built templates (Get Objects, Semantic Search, Where Filter, Aggregate, Explore)
 - **Query Execution**: Run GraphQL queries against your Weaviate instance
@@ -43,15 +42,6 @@ A modern, responsive web interface for managing and exploring Weaviate vector da
 - **Server Information**: View hostname and Weaviate version
 - **Module Information**: Display enabled modules and their status
 - **Raw Meta Data**: Complete server meta information with JSON viewer
-=======
-- **Interactive Query Editor**: Full-featured GraphQL playground with syntax highlighting
-- **Example Queries**: Pre-built query templates for common operations
-- **Results Visualization**: Enhanced JSON display with copy/download functionality
-
-### 🖥️ Cluster Information
-- **Real-time Status**: Monitor cluster health and connection status
-- **Meta Information**: View Weaviate version, modules, and configuration
->>>>>>> 29ba87297b44c679a49e100b77d8a71b364a8720
 
 ### 🎨 Modern UI/UX
 - **Dark Theme**: Eye-friendly dark interface with gradient backgrounds
